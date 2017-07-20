@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D0A991D1F204A1E00FBFCAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A991C1F204A1E00FBFCAF /* Foundation.framework */; };
+		7D0A99271F204A1E00FBFCAF /* jaildingtalk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D0A99191F204A1E00FBFCAF /* jaildingtalk.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = jaildingtalk.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0A991C1F204A1E00FBFCAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D0A99211F204A1E00FBFCAF /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		7D0A99221F204A1E00FBFCAF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		7D0A99241F204A1E00FBFCAF /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		7D0A99251F204A1E00FBFCAF /* jaildingtalk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jaildingtalk-Prefix.pch"; sourceTree = "<group>"; };
+		7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = jaildingtalk.mm; sourceTree = "<group>"; };
+		7D0A992B1F204A1E00FBFCAF /* jaildingtalk.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = jaildingtalk.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/jaildingtalk.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D0A99151F204A1E00FBFCAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0A991D1F204A1E00FBFCAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D0A990F1F204A1E00FBFCAF = {
+			isa = PBXGroup;
+			children = (
+				7D0A991E1F204A1E00FBFCAF /* jaildingtalk */,
+				7D0A991B1F204A1E00FBFCAF /* Frameworks */,
+				7D0A991A1F204A1E00FBFCAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D0A991A1F204A1E00FBFCAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99191F204A1E00FBFCAF /* jaildingtalk.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D0A991B1F204A1E00FBFCAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A991C1F204A1E00FBFCAF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D0A991E1F204A1E00FBFCAF /* jaildingtalk */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */,
+				7D0A991F1F204A1E00FBFCAF /* Package */,
+				7D0A99231F204A1E00FBFCAF /* Supporting Files */,
+			);
+			path = jaildingtalk;
+			sourceTree = "<group>";
+		};
+		7D0A991F1F204A1E00FBFCAF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99201F204A1E00FBFCAF /* DEBIAN */,
+				7D0A99281F204A1E00FBFCAF /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		7D0A99201F204A1E00FBFCAF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99211F204A1E00FBFCAF /* control.txt */,
+				7D0A99221F204A1E00FBFCAF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		7D0A99231F204A1E00FBFCAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99241F204A1E00FBFCAF /* PackageVersion.plist */,
+				7D0A99251F204A1E00FBFCAF /* jaildingtalk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D0A99281F204A1E00FBFCAF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99291F204A1E00FBFCAF /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		7D0A99291F204A1E00FBFCAF /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A992A1F204A1E00FBFCAF /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		7D0A992A1F204A1E00FBFCAF /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A992B1F204A1E00FBFCAF /* jaildingtalk.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7D0A99161F204A1E00FBFCAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7D0A99181F204A1E00FBFCAF /* jaildingtalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D0A992E1F204A1E00FBFCAF /* Build configuration list for PBXNativeTarget "jaildingtalk" */;
+			buildPhases = (
+				7D0A99141F204A1E00FBFCAF /* Sources */,
+				7D0A99151F204A1E00FBFCAF /* Frameworks */,
+				7D0A99161F204A1E00FBFCAF /* Headers */,
+				7D0A99171F204A1E00FBFCAF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jaildingtalk;
+			productName = jaildingtalk;
+			productReference = 7D0A99191F204A1E00FBFCAF /* jaildingtalk.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D0A99101F204A1E00FBFCAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					7D0A99181F204A1E00FBFCAF = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 865L62UDE9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7D0A99131F204A1E00FBFCAF /* Build configuration list for PBXProject "jaildingtalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D0A990F1F204A1E00FBFCAF;
+			productRefGroup = 7D0A991A1F204A1E00FBFCAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D0A99181F204A1E00FBFCAF /* jaildingtalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D0A99171F204A1E00FBFCAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D0A99141F204A1E00FBFCAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0A99271F204A1E00FBFCAF /* jaildingtalk.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D0A992C1F204A1E00FBFCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		7D0A992D1F204A1E00FBFCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		7D0A992F1F204A1E00FBFCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 865L62UDE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jaildingtalk/jaildingtalk-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		7D0A99301F204A1E00FBFCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 865L62UDE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jaildingtalk/jaildingtalk-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D0A99131F204A1E00FBFCAF /* Build configuration list for PBXProject "jaildingtalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0A992C1F204A1E00FBFCAF /* Debug */,
+				7D0A992D1F204A1E00FBFCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D0A992E1F204A1E00FBFCAF /* Build configuration list for PBXNativeTarget "jaildingtalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0A992F1F204A1E00FBFCAF /* Debug */,
+				7D0A99301F204A1E00FBFCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D0A99101F204A1E00FBFCAF /* Project object */;
+}
