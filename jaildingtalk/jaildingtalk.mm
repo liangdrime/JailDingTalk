@@ -2,7 +2,7 @@
 //  jaildingtalk.mm
 //  jaildingtalk
 //
-//  Created by Roylee on 2017/7/20.
+//  Created by Roylee on 2017/7/16.
 //  Copyright (c) 2017年 __MyCompanyName__. All rights reserved.
 //
 
@@ -10,8 +10,12 @@
 // see https://github.com/rpetrich/CaptainHook/
 
 #import <Foundation/Foundation.h>
-#import "CaptainHook/CaptainHook.h"
-#include <notify.h> // not required; for examples only
+#import <CaptainHook/CaptainHook.h>
+#import <UIKit/UIKit.h>
+#import "JALocationHook.h"
+#import "UIBarButtonItem+JABlock.h"
+#import "JALocationSettingViewController.h"
+#import "JAUntil.h"
 
 // Objective-C runtime hooking using CaptainHook:
 //   1. declare class using CHDeclareClass()
@@ -20,70 +24,39 @@
 //   4. register hook using CHHook() in CHConstructor
 //   5. (optionally) call old method using CHSuper()
 
+/*
+ DTContainerAppDelegate
+ DTTabBarController
+ */
+CHDeclareClass(DTSettingViewController);
 
-@interface jaildingtalk : NSObject
 
-@end
-
-@implementation jaildingtalk
-
--(id)init
-{
-	if ((self = [super init]))
-	{
-	}
-
-    return self;
+/// Show setting
+static void ShowLocationSettingController() {
+    UIWindow *keyWindow = [JAUntil keyWindow];
+    UIViewController *rootViewController = keyWindow.rootViewController;
+    
+    // present the setting controler.
+    JALocationSettingViewController *settingVC = [JALocationSettingViewController new];
+    [rootViewController presentViewController:settingVC animated:YES completion:nil];
 }
 
-@end
-
-
-@class ClassToHook;
-
-CHDeclareClass(ClassToHook); // declare class
-
-CHOptimizedMethod(0, self, void, ClassToHook, messageName) // hook method (with no arguments and no return value)
-{
-	// write code here ...
-	
-	CHSuper(0, ClassToHook, messageName); // call old (original) method
+/// User center.
+CHOptimizedMethod0(self, void, DTSettingViewController, viewDidLoad) {
+    CHSuper0(DTSettingViewController, viewDidLoad);
+    
+    // Add left location setting button.
+    UIBarButtonItem *leftBarItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"nav_location_setting"] action:^(UIBarButtonItem *sender) {
+        ShowLocationSettingController();
+    }];
+    UIViewController *_self = (UIViewController *)self;
+    _self.navigationItem.leftBarButtonItem = leftBarItem;
 }
 
-CHOptimizedMethod(2, self, BOOL, ClassToHook, arg1, NSString*, value1, arg2, BOOL, value2) // hook method (with 2 arguments and a return value)
-{
-	// write code here ...
-
-	return CHSuper(2, ClassToHook, arg1, value1, arg2, value2); // call old (original) method and return its return value
+CHConstructor {
+    @autoreleasepool {
+        CHLoadLateClass(DTSettingViewController);
+        CHHook0(DTSettingViewController, viewDidLoad);
+    }
 }
 
-static void WillEnterForeground(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
-{
-	// not required; for example only
-}
-
-static void ExternallyPostedNotification(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
-{
-	// not required; for example only
-}
-
-CHConstructor // code block that runs immediately upon load
-{
-	@autoreleasepool
-	{
-		// listen for local notification (not required; for example only)
-		CFNotificationCenterRef center = CFNotificationCenterGetLocalCenter();
-		CFNotificationCenterAddObserver(center, NULL, WillEnterForeground, CFSTR("UIApplicationWillEnterForegroundNotification"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-		
-		// listen for system-side notification (not required; for example only)
-		// this would be posted using: notify_post("com.zy.jaildingtalk.eventname");
-		CFNotificationCenterRef darwin = CFNotificationCenterGetDarwinNotifyCenter();
-		CFNotificationCenterAddObserver(darwin, NULL, ExternallyPostedNotification, CFSTR("com.zy.jaildingtalk.eventname"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-		
-		// CHLoadClass(ClassToHook); // load class (that is "available now")
-		// CHLoadLateClass(ClassToHook);  // load class (that will be "available later")
-		
-		CHHook(0, ClassToHook, messageName); // register hook
-		CHHook(2, ClassToHook, arg1, arg2); // register hook
-	}
-}

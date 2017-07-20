@@ -9,6 +9,29 @@
 /* Begin PBXBuildFile section */
 		7D0A991D1F204A1E00FBFCAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A991C1F204A1E00FBFCAF /* Foundation.framework */; };
 		7D0A99271F204A1E00FBFCAF /* jaildingtalk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */; };
+		7D0A99451F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99321F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h */; };
+		7D0A99461F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99331F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m */; };
+		7D0A99471F204A3E00FBFCAF /* UIView+JAFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99341F204A3E00FBFCAF /* UIView+JAFrame.h */; };
+		7D0A99481F204A3E00FBFCAF /* UIView+JAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99351F204A3E00FBFCAF /* UIView+JAFrame.m */; };
+		7D0A99491F204A3E00FBFCAF /* JALocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99371F204A3E00FBFCAF /* JALocationHelper.h */; };
+		7D0A994A1F204A3E00FBFCAF /* JALocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99381F204A3E00FBFCAF /* JALocationHelper.m */; };
+		7D0A994B1F204A3E00FBFCAF /* JALocationHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99391F204A3E00FBFCAF /* JALocationHook.h */; };
+		7D0A994C1F204A3E00FBFCAF /* JALocationHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A993A1F204A3E00FBFCAF /* JALocationHook.m */; };
+		7D0A994D1F204A3E00FBFCAF /* JACenterAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A993C1F204A3E00FBFCAF /* JACenterAnnotationView.h */; };
+		7D0A994E1F204A3E00FBFCAF /* JACenterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A993D1F204A3E00FBFCAF /* JACenterAnnotationView.m */; };
+		7D0A994F1F204A3E00FBFCAF /* JALocationSearchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A993E1F204A3E00FBFCAF /* JALocationSearchView.h */; };
+		7D0A99501F204A3E00FBFCAF /* JALocationSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A993F1F204A3E00FBFCAF /* JALocationSearchView.m */; };
+		7D0A99511F204A3E00FBFCAF /* JALocationSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99401F204A3E00FBFCAF /* JALocationSettingViewController.h */; };
+		7D0A99521F204A3E00FBFCAF /* JALocationSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99411F204A3E00FBFCAF /* JALocationSettingViewController.m */; };
+		7D0A99531F204A3E00FBFCAF /* JASwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99431F204A3E00FBFCAF /* JASwizzler.h */; };
+		7D0A99541F204A3E00FBFCAF /* JASwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99441F204A3E00FBFCAF /* JASwizzler.m */; };
+		7D0A99571F204A5000FBFCAF /* JAUntil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99551F204A5000FBFCAF /* JAUntil.h */; };
+		7D0A99581F204A5000FBFCAF /* JAUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99561F204A5000FBFCAF /* JAUntil.m */; };
+		7D0A995B1F204B2700FBFCAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A995A1F204B2700FBFCAF /* UIKit.framework */; };
+		7D0A995D1F204B2C00FBFCAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A995C1F204B2C00FBFCAF /* CoreLocation.framework */; };
+		7D0A995F1F204B3500FBFCAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A995E1F204B3500FBFCAF /* CoreGraphics.framework */; };
+		7D0A99611F204B4E00FBFCAF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A99601F204B4E00FBFCAF /* QuartzCore.framework */; };
+		7D0A99631F204B5400FBFCAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A99621F204B5400FBFCAF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +43,30 @@
 		7D0A99251F204A1E00FBFCAF /* jaildingtalk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jaildingtalk-Prefix.pch"; sourceTree = "<group>"; };
 		7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = jaildingtalk.mm; sourceTree = "<group>"; };
 		7D0A992B1F204A1E00FBFCAF /* jaildingtalk.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = jaildingtalk.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/jaildingtalk.plist; sourceTree = "<group>"; };
+		7D0A99321F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JABlock.h"; sourceTree = "<group>"; };
+		7D0A99331F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JABlock.m"; sourceTree = "<group>"; };
+		7D0A99341F204A3E00FBFCAF /* UIView+JAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JAFrame.h"; sourceTree = "<group>"; };
+		7D0A99351F204A3E00FBFCAF /* UIView+JAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JAFrame.m"; sourceTree = "<group>"; };
+		7D0A99371F204A3E00FBFCAF /* JALocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationHelper.h; sourceTree = "<group>"; };
+		7D0A99381F204A3E00FBFCAF /* JALocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationHelper.m; sourceTree = "<group>"; };
+		7D0A99391F204A3E00FBFCAF /* JALocationHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationHook.h; sourceTree = "<group>"; };
+		7D0A993A1F204A3E00FBFCAF /* JALocationHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationHook.m; sourceTree = "<group>"; };
+		7D0A993C1F204A3E00FBFCAF /* JACenterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACenterAnnotationView.h; sourceTree = "<group>"; };
+		7D0A993D1F204A3E00FBFCAF /* JACenterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACenterAnnotationView.m; sourceTree = "<group>"; };
+		7D0A993E1F204A3E00FBFCAF /* JALocationSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationSearchView.h; sourceTree = "<group>"; };
+		7D0A993F1F204A3E00FBFCAF /* JALocationSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationSearchView.m; sourceTree = "<group>"; };
+		7D0A99401F204A3E00FBFCAF /* JALocationSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationSettingViewController.h; sourceTree = "<group>"; };
+		7D0A99411F204A3E00FBFCAF /* JALocationSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationSettingViewController.m; sourceTree = "<group>"; };
+		7D0A99431F204A3E00FBFCAF /* JASwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASwizzler.h; sourceTree = "<group>"; };
+		7D0A99441F204A3E00FBFCAF /* JASwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASwizzler.m; sourceTree = "<group>"; };
+		7D0A99551F204A5000FBFCAF /* JAUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAUntil.h; sourceTree = "<group>"; };
+		7D0A99561F204A5000FBFCAF /* JAUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAUntil.m; sourceTree = "<group>"; };
+		7D0A99591F204A7000FBFCAF /* ja_images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ja_images.xcassets; sourceTree = "<group>"; };
+		7D0A995A1F204B2700FBFCAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D0A995C1F204B2C00FBFCAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7D0A995E1F204B3500FBFCAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D0A99601F204B4E00FBFCAF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7D0A99621F204B5400FBFCAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0A99631F204B5400FBFCAF /* MapKit.framework in Frameworks */,
+				7D0A99611F204B4E00FBFCAF /* QuartzCore.framework in Frameworks */,
+				7D0A995F1F204B3500FBFCAF /* CoreGraphics.framework in Frameworks */,
+				7D0A995D1F204B2C00FBFCAF /* CoreLocation.framework in Frameworks */,
+				7D0A995B1F204B2700FBFCAF /* UIKit.framework in Frameworks */,
 				7D0A991D1F204A1E00FBFCAF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +106,11 @@
 		7D0A991B1F204A1E00FBFCAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D0A99621F204B5400FBFCAF /* MapKit.framework */,
+				7D0A99601F204B4E00FBFCAF /* QuartzCore.framework */,
+				7D0A995E1F204B3500FBFCAF /* CoreGraphics.framework */,
+				7D0A995C1F204B2C00FBFCAF /* CoreLocation.framework */,
+				7D0A995A1F204B2700FBFCAF /* UIKit.framework */,
 				7D0A991C1F204A1E00FBFCAF /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -63,8 +120,15 @@
 			isa = PBXGroup;
 			children = (
 				7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */,
+				7D0A99551F204A5000FBFCAF /* JAUntil.h */,
+				7D0A99561F204A5000FBFCAF /* JAUntil.m */,
+				7D0A99421F204A3E00FBFCAF /* Swizzler */,
+				7D0A99361F204A3E00FBFCAF /* JALocation */,
+				7D0A993B1F204A3E00FBFCAF /* LocationSetting */,
+				7D0A99311F204A3E00FBFCAF /* Category */,
 				7D0A991F1F204A1E00FBFCAF /* Package */,
 				7D0A99231F204A1E00FBFCAF /* Supporting Files */,
+				7D0A99591F204A7000FBFCAF /* ja_images.xcassets */,
 			);
 			path = jaildingtalk;
 			sourceTree = "<group>";
@@ -120,6 +184,50 @@
 			name = DynamicLibraries;
 			sourceTree = "<group>";
 		};
+		7D0A99311F204A3E00FBFCAF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99321F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h */,
+				7D0A99331F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m */,
+				7D0A99341F204A3E00FBFCAF /* UIView+JAFrame.h */,
+				7D0A99351F204A3E00FBFCAF /* UIView+JAFrame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7D0A99361F204A3E00FBFCAF /* JALocation */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99371F204A3E00FBFCAF /* JALocationHelper.h */,
+				7D0A99381F204A3E00FBFCAF /* JALocationHelper.m */,
+				7D0A99391F204A3E00FBFCAF /* JALocationHook.h */,
+				7D0A993A1F204A3E00FBFCAF /* JALocationHook.m */,
+			);
+			path = JALocation;
+			sourceTree = "<group>";
+		};
+		7D0A993B1F204A3E00FBFCAF /* LocationSetting */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99401F204A3E00FBFCAF /* JALocationSettingViewController.h */,
+				7D0A99411F204A3E00FBFCAF /* JALocationSettingViewController.m */,
+				7D0A993E1F204A3E00FBFCAF /* JALocationSearchView.h */,
+				7D0A993F1F204A3E00FBFCAF /* JALocationSearchView.m */,
+				7D0A993C1F204A3E00FBFCAF /* JACenterAnnotationView.h */,
+				7D0A993D1F204A3E00FBFCAF /* JACenterAnnotationView.m */,
+			);
+			path = LocationSetting;
+			sourceTree = "<group>";
+		};
+		7D0A99421F204A3E00FBFCAF /* Swizzler */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99431F204A3E00FBFCAF /* JASwizzler.h */,
+				7D0A99441F204A3E00FBFCAF /* JASwizzler.m */,
+			);
+			path = Swizzler;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,6 +235,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0A99511F204A3E00FBFCAF /* JALocationSettingViewController.h in Headers */,
+				7D0A99471F204A3E00FBFCAF /* UIView+JAFrame.h in Headers */,
+				7D0A99571F204A5000FBFCAF /* JAUntil.h in Headers */,
+				7D0A994F1F204A3E00FBFCAF /* JALocationSearchView.h in Headers */,
+				7D0A99451F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h in Headers */,
+				7D0A99491F204A3E00FBFCAF /* JALocationHelper.h in Headers */,
+				7D0A994D1F204A3E00FBFCAF /* JACenterAnnotationView.h in Headers */,
+				7D0A994B1F204A3E00FBFCAF /* JALocationHook.h in Headers */,
+				7D0A99531F204A3E00FBFCAF /* JASwizzler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0A994C1F204A3E00FBFCAF /* JALocationHook.m in Sources */,
+				7D0A99581F204A5000FBFCAF /* JAUntil.m in Sources */,
+				7D0A994E1F204A3E00FBFCAF /* JACenterAnnotationView.m in Sources */,
+				7D0A99501F204A3E00FBFCAF /* JALocationSearchView.m in Sources */,
 				7D0A99271F204A1E00FBFCAF /* jaildingtalk.mm in Sources */,
+				7D0A994A1F204A3E00FBFCAF /* JALocationHelper.m in Sources */,
+				7D0A99481F204A3E00FBFCAF /* UIView+JAFrame.m in Sources */,
+				7D0A99461F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m in Sources */,
+				7D0A99521F204A3E00FBFCAF /* JALocationSettingViewController.m in Sources */,
+				7D0A99541F204A3E00FBFCAF /* JASwizzler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +393,16 @@
 		7D0A992F1F204A1E00FBFCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = 865L62UDE9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jaildingtalk/jaildingtalk-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -288,13 +417,16 @@
 		7D0A99301F204A1E00FBFCAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = 865L62UDE9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jaildingtalk/jaildingtalk-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -325,6 +457,7 @@
 				7D0A99301F204A1E00FBFCAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
