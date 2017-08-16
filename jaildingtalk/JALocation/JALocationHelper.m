@@ -22,6 +22,9 @@ NSString *const kLocationLatitude = @"kLocationLatitude";
         return location;
     }
     
+    return location;
+    
+    /*
     double latitude_base = [latitude_base_string floatValue];
     double longitude_base = [longitude_base_string floatValue];
     
@@ -32,7 +35,7 @@ NSString *const kLocationLatitude = @"kLocationLatitude";
     double latitude = latitude_base + (double)(offset_lat * 0.000001);
     
     CLLocationCoordinate2D coordinate2D = CLLocationCoordinate2DMake(latitude, longitude);
-    // Transform the GD location to GPS.
+    // Transform the GPS location to GD.
     coordinate2D = TransformCoordinate(coordinate2D);
     
     CLLocation *currentLocation = nil;
@@ -45,6 +48,7 @@ NSString *const kLocationLatitude = @"kLocationLatitude";
     }
     
     return currentLocation;
+     */
 }
 
 + (void)saveLocation:(CLLocationCoordinate2D)coordinate {
@@ -68,7 +72,7 @@ NSString *const kLocationLatitude = @"kLocationLatitude";
 
 #pragma mark -
 
-// Transform the GD location to GPS.
+// Transform the GPS location to GD.
 CLLocationCoordinate2D TransformCoordinate(CLLocationCoordinate2D coordinate) {
     double a = 6378245.0;
     double ee = 0.00669342162296594323;
