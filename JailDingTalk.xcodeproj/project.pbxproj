@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D0A991D1F204A1E00FBFCAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A991C1F204A1E00FBFCAF /* Foundation.framework */; };
+		7D0A99271F204A1E00FBFCAF /* jaildingtalk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */; };
+		7D0A99451F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99321F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h */; };
+		7D0A99461F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99331F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m */; };
+		7D0A99471F204A3E00FBFCAF /* UIView+JAFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99341F204A3E00FBFCAF /* UIView+JAFrame.h */; };
+		7D0A99481F204A3E00FBFCAF /* UIView+JAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99351F204A3E00FBFCAF /* UIView+JAFrame.m */; };
+		7D0A994B1F204A3E00FBFCAF /* JALocationHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99391F204A3E00FBFCAF /* JALocationHook.h */; };
+		7D0A994C1F204A3E00FBFCAF /* JALocationHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A993A1F204A3E00FBFCAF /* JALocationHook.m */; };
+		7D0A99531F204A3E00FBFCAF /* JASwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0A99431F204A3E00FBFCAF /* JASwizzler.h */; };
+		7D0A99541F204A3E00FBFCAF /* JASwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A99441F204A3E00FBFCAF /* JASwizzler.m */; };
+		7D0A995B1F204B2700FBFCAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A995A1F204B2700FBFCAF /* UIKit.framework */; };
+		7D0A995D1F204B2C00FBFCAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A995C1F204B2C00FBFCAF /* CoreLocation.framework */; };
+		7D0A995F1F204B3500FBFCAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A995E1F204B3500FBFCAF /* CoreGraphics.framework */; };
+		7D0A99611F204B4E00FBFCAF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A99601F204B4E00FBFCAF /* QuartzCore.framework */; };
+		7D0A99631F204B5400FBFCAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0A99621F204B5400FBFCAF /* MapKit.framework */; };
+		7D2BBC4F1F44367D00BE8AB9 /* JAFishHook.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC491F44367D00BE8AB9 /* JAFishHook.c */; };
+		7D2BBC501F44367D00BE8AB9 /* JAFishHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC4A1F44367D00BE8AB9 /* JAFishHook.h */; };
+		7D2BBC511F44367D00BE8AB9 /* JAHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC4B1F44367D00BE8AB9 /* JAHelper.h */; };
+		7D2BBC521F44367D00BE8AB9 /* JAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC4C1F44367D00BE8AB9 /* JAHelper.m */; };
+		7D2BBC531F44367D00BE8AB9 /* JAUntil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC4D1F44367D00BE8AB9 /* JAUntil.h */; };
+		7D2BBC541F44367D00BE8AB9 /* JAUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC4E1F44367D00BE8AB9 /* JAUntil.m */; };
+		7D2BBC5C1F44368F00BE8AB9 /* JACenterAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC561F44368F00BE8AB9 /* JACenterAnnotationView.h */; };
+		7D2BBC5D1F44368F00BE8AB9 /* JACenterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC571F44368F00BE8AB9 /* JACenterAnnotationView.m */; };
+		7D2BBC5E1F44368F00BE8AB9 /* JALocationSearchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC581F44368F00BE8AB9 /* JALocationSearchView.h */; };
+		7D2BBC5F1F44368F00BE8AB9 /* JALocationSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC591F44368F00BE8AB9 /* JALocationSearchView.m */; };
+		7D2BBC601F44368F00BE8AB9 /* JALocationSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC5A1F44368F00BE8AB9 /* JALocationSettingViewController.h */; };
+		7D2BBC611F44368F00BE8AB9 /* JALocationSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC5B1F44368F00BE8AB9 /* JALocationSettingViewController.m */; };
+		7D2BBC661F44378C00BE8AB9 /* JAWifiModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC641F44378C00BE8AB9 /* JAWifiModel.h */; };
+		7D2BBC671F44378C00BE8AB9 /* JAWifiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC651F44378C00BE8AB9 /* JAWifiModel.m */; };
+		7D2BBC691F4437AE00BE8AB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2BBC681F4437AE00BE8AB9 /* SystemConfiguration.framework */; };
+		7D2BBC6C1F44387000BE8AB9 /* JAWifiSettingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC6A1F44387000BE8AB9 /* JAWifiSettingSession.h */; };
+		7D2BBC6D1F44387000BE8AB9 /* JAWifiSettingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC6B1F44387000BE8AB9 /* JAWifiSettingSession.m */; };
+		7D2BBC701F443BDC00BE8AB9 /* JAWifiHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC6E1F443BDC00BE8AB9 /* JAWifiHook.h */; };
+		7D2BBC711F443BDC00BE8AB9 /* JAWifiHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC6F1F443BDC00BE8AB9 /* JAWifiHook.m */; };
+		7D2BBC741F443D7B00BE8AB9 /* JAWifiSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2BBC721F443D7B00BE8AB9 /* JAWifiSettingViewController.h */; };
+		7D2BBC751F443D7B00BE8AB9 /* JAWifiSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BBC731F443D7B00BE8AB9 /* JAWifiSettingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D0A99191F204A1E00FBFCAF /* JailDingTalk.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = JailDingTalk.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0A991C1F204A1E00FBFCAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D0A99211F204A1E00FBFCAF /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		7D0A99221F204A1E00FBFCAF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		7D0A99241F204A1E00FBFCAF /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		7D0A99251F204A1E00FBFCAF /* JailDingTalk.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JailDingTalk.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = jaildingtalk.mm; sourceTree = "<group>"; };
+		7D0A992B1F204A1E00FBFCAF /* jaildingtalk.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = jaildingtalk.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/jaildingtalk.plist; sourceTree = "<group>"; };
+		7D0A99321F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JABlock.h"; sourceTree = "<group>"; };
+		7D0A99331F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JABlock.m"; sourceTree = "<group>"; };
+		7D0A99341F204A3E00FBFCAF /* UIView+JAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JAFrame.h"; sourceTree = "<group>"; };
+		7D0A99351F204A3E00FBFCAF /* UIView+JAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JAFrame.m"; sourceTree = "<group>"; };
+		7D0A99391F204A3E00FBFCAF /* JALocationHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationHook.h; sourceTree = "<group>"; };
+		7D0A993A1F204A3E00FBFCAF /* JALocationHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationHook.m; sourceTree = "<group>"; };
+		7D0A99431F204A3E00FBFCAF /* JASwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASwizzler.h; sourceTree = "<group>"; };
+		7D0A99441F204A3E00FBFCAF /* JASwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASwizzler.m; sourceTree = "<group>"; };
+		7D0A995A1F204B2700FBFCAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D0A995C1F204B2C00FBFCAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7D0A995E1F204B3500FBFCAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D0A99601F204B4E00FBFCAF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7D0A99621F204B5400FBFCAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7D2BBC491F44367D00BE8AB9 /* JAFishHook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JAFishHook.c; sourceTree = "<group>"; };
+		7D2BBC4A1F44367D00BE8AB9 /* JAFishHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAFishHook.h; sourceTree = "<group>"; };
+		7D2BBC4B1F44367D00BE8AB9 /* JAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAHelper.h; sourceTree = "<group>"; };
+		7D2BBC4C1F44367D00BE8AB9 /* JAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAHelper.m; sourceTree = "<group>"; };
+		7D2BBC4D1F44367D00BE8AB9 /* JAUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAUntil.h; sourceTree = "<group>"; };
+		7D2BBC4E1F44367D00BE8AB9 /* JAUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAUntil.m; sourceTree = "<group>"; };
+		7D2BBC561F44368F00BE8AB9 /* JACenterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACenterAnnotationView.h; sourceTree = "<group>"; };
+		7D2BBC571F44368F00BE8AB9 /* JACenterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACenterAnnotationView.m; sourceTree = "<group>"; };
+		7D2BBC581F44368F00BE8AB9 /* JALocationSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationSearchView.h; sourceTree = "<group>"; };
+		7D2BBC591F44368F00BE8AB9 /* JALocationSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationSearchView.m; sourceTree = "<group>"; };
+		7D2BBC5A1F44368F00BE8AB9 /* JALocationSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALocationSettingViewController.h; sourceTree = "<group>"; };
+		7D2BBC5B1F44368F00BE8AB9 /* JALocationSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALocationSettingViewController.m; sourceTree = "<group>"; };
+		7D2BBC641F44378C00BE8AB9 /* JAWifiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWifiModel.h; sourceTree = "<group>"; };
+		7D2BBC651F44378C00BE8AB9 /* JAWifiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWifiModel.m; sourceTree = "<group>"; };
+		7D2BBC681F4437AE00BE8AB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7D2BBC6A1F44387000BE8AB9 /* JAWifiSettingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWifiSettingSession.h; sourceTree = "<group>"; };
+		7D2BBC6B1F44387000BE8AB9 /* JAWifiSettingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWifiSettingSession.m; sourceTree = "<group>"; };
+		7D2BBC6E1F443BDC00BE8AB9 /* JAWifiHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWifiHook.h; sourceTree = "<group>"; };
+		7D2BBC6F1F443BDC00BE8AB9 /* JAWifiHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWifiHook.m; sourceTree = "<group>"; };
+		7D2BBC721F443D7B00BE8AB9 /* JAWifiSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWifiSettingViewController.h; sourceTree = "<group>"; };
+		7D2BBC731F443D7B00BE8AB9 /* JAWifiSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWifiSettingViewController.m; sourceTree = "<group>"; };
+		7D3C77C421B91EA8008754DB /* ja_images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ja_images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D0A99151F204A1E00FBFCAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2BBC691F4437AE00BE8AB9 /* SystemConfiguration.framework in Frameworks */,
+				7D0A99631F204B5400FBFCAF /* MapKit.framework in Frameworks */,
+				7D0A99611F204B4E00FBFCAF /* QuartzCore.framework in Frameworks */,
+				7D0A995F1F204B3500FBFCAF /* CoreGraphics.framework in Frameworks */,
+				7D0A995D1F204B2C00FBFCAF /* CoreLocation.framework in Frameworks */,
+				7D0A995B1F204B2700FBFCAF /* UIKit.framework in Frameworks */,
+				7D0A991D1F204A1E00FBFCAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D0A990F1F204A1E00FBFCAF = {
+			isa = PBXGroup;
+			children = (
+				7D0A991E1F204A1E00FBFCAF /* JailDingTalk */,
+				7D0A991B1F204A1E00FBFCAF /* Frameworks */,
+				7D0A991A1F204A1E00FBFCAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D0A991A1F204A1E00FBFCAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99191F204A1E00FBFCAF /* JailDingTalk.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D0A991B1F204A1E00FBFCAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BBC681F4437AE00BE8AB9 /* SystemConfiguration.framework */,
+				7D0A99621F204B5400FBFCAF /* MapKit.framework */,
+				7D0A99601F204B4E00FBFCAF /* QuartzCore.framework */,
+				7D0A995E1F204B3500FBFCAF /* CoreGraphics.framework */,
+				7D0A995C1F204B2C00FBFCAF /* CoreLocation.framework */,
+				7D0A995A1F204B2700FBFCAF /* UIKit.framework */,
+				7D0A991C1F204A1E00FBFCAF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D0A991E1F204A1E00FBFCAF /* JailDingTalk */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99261F204A1E00FBFCAF /* jaildingtalk.mm */,
+				7D2BBC481F44367D00BE8AB9 /* Unitl */,
+				7D0A99421F204A3E00FBFCAF /* Swizzler */,
+				7D0A99361F204A3E00FBFCAF /* JALocation */,
+				7D2BBC471F44367D00BE8AB9 /* JAWifi */,
+				7D0A99311F204A3E00FBFCAF /* Category */,
+				7D0A991F1F204A1E00FBFCAF /* Package */,
+				7D0A99231F204A1E00FBFCAF /* Supporting Files */,
+				7D3C77C421B91EA8008754DB /* ja_images.xcassets */,
+			);
+			path = JailDingTalk;
+			sourceTree = "<group>";
+		};
+		7D0A991F1F204A1E00FBFCAF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99201F204A1E00FBFCAF /* DEBIAN */,
+				7D0A99281F204A1E00FBFCAF /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		7D0A99201F204A1E00FBFCAF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99211F204A1E00FBFCAF /* control.txt */,
+				7D0A99221F204A1E00FBFCAF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		7D0A99231F204A1E00FBFCAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99241F204A1E00FBFCAF /* PackageVersion.plist */,
+				7D0A99251F204A1E00FBFCAF /* JailDingTalk.temp_caseinsensitive_rename-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D0A99281F204A1E00FBFCAF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99291F204A1E00FBFCAF /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		7D0A99291F204A1E00FBFCAF /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A992A1F204A1E00FBFCAF /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		7D0A992A1F204A1E00FBFCAF /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A992B1F204A1E00FBFCAF /* jaildingtalk.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		7D0A99311F204A3E00FBFCAF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99321F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h */,
+				7D0A99331F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m */,
+				7D0A99341F204A3E00FBFCAF /* UIView+JAFrame.h */,
+				7D0A99351F204A3E00FBFCAF /* UIView+JAFrame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7D0A99361F204A3E00FBFCAF /* JALocation */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99391F204A3E00FBFCAF /* JALocationHook.h */,
+				7D0A993A1F204A3E00FBFCAF /* JALocationHook.m */,
+				7D2BBC6E1F443BDC00BE8AB9 /* JAWifiHook.h */,
+				7D2BBC6F1F443BDC00BE8AB9 /* JAWifiHook.m */,
+				7D2BBC551F44368F00BE8AB9 /* LocationSetting */,
+			);
+			path = JALocation;
+			sourceTree = "<group>";
+		};
+		7D0A99421F204A3E00FBFCAF /* Swizzler */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A99431F204A3E00FBFCAF /* JASwizzler.h */,
+				7D0A99441F204A3E00FBFCAF /* JASwizzler.m */,
+			);
+			path = Swizzler;
+			sourceTree = "<group>";
+		};
+		7D2BBC471F44367D00BE8AB9 /* JAWifi */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BBC621F4436F900BE8AB9 /* Model */,
+				7D2BBC631F4436F900BE8AB9 /* WifiSetting */,
+			);
+			path = JAWifi;
+			sourceTree = "<group>";
+		};
+		7D2BBC481F44367D00BE8AB9 /* Unitl */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BBC491F44367D00BE8AB9 /* JAFishHook.c */,
+				7D2BBC4A1F44367D00BE8AB9 /* JAFishHook.h */,
+				7D2BBC4B1F44367D00BE8AB9 /* JAHelper.h */,
+				7D2BBC4C1F44367D00BE8AB9 /* JAHelper.m */,
+				7D2BBC4D1F44367D00BE8AB9 /* JAUntil.h */,
+				7D2BBC4E1F44367D00BE8AB9 /* JAUntil.m */,
+			);
+			path = Unitl;
+			sourceTree = "<group>";
+		};
+		7D2BBC551F44368F00BE8AB9 /* LocationSetting */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BBC561F44368F00BE8AB9 /* JACenterAnnotationView.h */,
+				7D2BBC571F44368F00BE8AB9 /* JACenterAnnotationView.m */,
+				7D2BBC581F44368F00BE8AB9 /* JALocationSearchView.h */,
+				7D2BBC591F44368F00BE8AB9 /* JALocationSearchView.m */,
+				7D2BBC5A1F44368F00BE8AB9 /* JALocationSettingViewController.h */,
+				7D2BBC5B1F44368F00BE8AB9 /* JALocationSettingViewController.m */,
+			);
+			path = LocationSetting;
+			sourceTree = "<group>";
+		};
+		7D2BBC621F4436F900BE8AB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BBC641F44378C00BE8AB9 /* JAWifiModel.h */,
+				7D2BBC651F44378C00BE8AB9 /* JAWifiModel.m */,
+				7D2BBC6A1F44387000BE8AB9 /* JAWifiSettingSession.h */,
+				7D2BBC6B1F44387000BE8AB9 /* JAWifiSettingSession.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D2BBC631F4436F900BE8AB9 /* WifiSetting */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BBC721F443D7B00BE8AB9 /* JAWifiSettingViewController.h */,
+				7D2BBC731F443D7B00BE8AB9 /* JAWifiSettingViewController.m */,
+			);
+			path = WifiSetting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7D0A99161F204A1E00FBFCAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2BBC701F443BDC00BE8AB9 /* JAWifiHook.h in Headers */,
+				7D2BBC601F44368F00BE8AB9 /* JALocationSettingViewController.h in Headers */,
+				7D2BBC741F443D7B00BE8AB9 /* JAWifiSettingViewController.h in Headers */,
+				7D2BBC661F44378C00BE8AB9 /* JAWifiModel.h in Headers */,
+				7D2BBC5C1F44368F00BE8AB9 /* JACenterAnnotationView.h in Headers */,
+				7D0A99471F204A3E00FBFCAF /* UIView+JAFrame.h in Headers */,
+				7D2BBC531F44367D00BE8AB9 /* JAUntil.h in Headers */,
+				7D2BBC511F44367D00BE8AB9 /* JAHelper.h in Headers */,
+				7D0A99451F204A3E00FBFCAF /* UIBarButtonItem+JABlock.h in Headers */,
+				7D2BBC501F44367D00BE8AB9 /* JAFishHook.h in Headers */,
+				7D2BBC6C1F44387000BE8AB9 /* JAWifiSettingSession.h in Headers */,
+				7D0A994B1F204A3E00FBFCAF /* JALocationHook.h in Headers */,
+				7D2BBC5E1F44368F00BE8AB9 /* JALocationSearchView.h in Headers */,
+				7D0A99531F204A3E00FBFCAF /* JASwizzler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7D0A99181F204A1E00FBFCAF /* JailDingTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D0A992E1F204A1E00FBFCAF /* Build configuration list for PBXNativeTarget "JailDingTalk" */;
+			buildPhases = (
+				7D0A99141F204A1E00FBFCAF /* Sources */,
+				7D0A99151F204A1E00FBFCAF /* Frameworks */,
+				7D0A99161F204A1E00FBFCAF /* Headers */,
+				7D0A99171F204A1E00FBFCAF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JailDingTalk;
+			productName = jaildingtalk;
+			productReference = 7D0A99191F204A1E00FBFCAF /* JailDingTalk.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D0A99101F204A1E00FBFCAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					7D0A99181F204A1E00FBFCAF = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 865L62UDE9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7D0A99131F204A1E00FBFCAF /* Build configuration list for PBXProject "JailDingTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D0A990F1F204A1E00FBFCAF;
+			productRefGroup = 7D0A991A1F204A1E00FBFCAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D0A99181F204A1E00FBFCAF /* JailDingTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D0A99171F204A1E00FBFCAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D0A99141F204A1E00FBFCAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2BBC5F1F44368F00BE8AB9 /* JALocationSearchView.m in Sources */,
+				7D0A994C1F204A3E00FBFCAF /* JALocationHook.m in Sources */,
+				7D0A99271F204A1E00FBFCAF /* jaildingtalk.mm in Sources */,
+				7D2BBC751F443D7B00BE8AB9 /* JAWifiSettingViewController.m in Sources */,
+				7D0A99481F204A3E00FBFCAF /* UIView+JAFrame.m in Sources */,
+				7D2BBC6D1F44387000BE8AB9 /* JAWifiSettingSession.m in Sources */,
+				7D2BBC541F44367D00BE8AB9 /* JAUntil.m in Sources */,
+				7D2BBC5D1F44368F00BE8AB9 /* JACenterAnnotationView.m in Sources */,
+				7D0A99461F204A3E00FBFCAF /* UIBarButtonItem+JABlock.m in Sources */,
+				7D2BBC671F44378C00BE8AB9 /* JAWifiModel.m in Sources */,
+				7D2BBC611F44368F00BE8AB9 /* JALocationSettingViewController.m in Sources */,
+				7D2BBC711F443BDC00BE8AB9 /* JAWifiHook.m in Sources */,
+				7D0A99541F204A3E00FBFCAF /* JASwizzler.m in Sources */,
+				7D2BBC521F44367D00BE8AB9 /* JAHelper.m in Sources */,
+				7D2BBC4F1F44367D00BE8AB9 /* JAFishHook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D0A992C1F204A1E00FBFCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		7D0A992D1F204A1E00FBFCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		7D0A992F1F204A1E00FBFCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 865L62UDE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jaildingtalk/JailDingTalk.temp_caseinsensitive_rename-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		7D0A99301F204A1E00FBFCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 865L62UDE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jaildingtalk/JailDingTalk.temp_caseinsensitive_rename-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D0A99131F204A1E00FBFCAF /* Build configuration list for PBXProject "JailDingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0A992C1F204A1E00FBFCAF /* Debug */,
+				7D0A992D1F204A1E00FBFCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D0A992E1F204A1E00FBFCAF /* Build configuration list for PBXNativeTarget "JailDingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0A992F1F204A1E00FBFCAF /* Debug */,
+				7D0A99301F204A1E00FBFCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D0A99101F204A1E00FBFCAF /* Project object */;
+}
